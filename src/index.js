@@ -28,7 +28,7 @@ startServer();
 async function fetchISSData() {
   try {
     const response = await axios.get("http://api.open-notify.org/iss-now.json");
-    console.log("ISS Data:", response.data);
+    console.log("ISS Status:", response.data.message);
   } catch (error) {
     console.error("Error fetching ISS data:", error);
   }
