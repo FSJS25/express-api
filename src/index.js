@@ -34,4 +34,4 @@ async function fetchISSData() {
   }
 }
 
-setInterval(fetchISSData, 5 * 60 * 1000);
+setInterval(fetchISSData, 1 * 60 * 1000);
