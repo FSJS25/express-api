@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const connectDB = require("./middleware/connectDB");
+const axios = require("axios");
 const PORT = process.env.PORT || 3050;
 
 const app = express();
@@ -23,3 +24,14 @@ async function startServer() {
 }
 
 startServer();
+
+async function fetchISSData() {
+  try {
+    const response = await axios.get("http://api.open-notify.org/iss-now.json");
+    console.log("ISS Data:", response.data);
+  } catch (error) {
+    console.error("Error fetching ISS data:", error);
+  }
+}
+
+setInterval(fetchISSData, 5 * 60 * 1000);
