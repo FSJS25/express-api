@@ -76,10 +76,10 @@ We welcome contributions! Please follow these steps:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-If you have any questions or feedback, please contact us at [your-email@example.com].
+If you have any questions or feedback, please contact us at [admin@gofsjs.com].
 
 Thank you for using our Express API project!
